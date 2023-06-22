@@ -2,527 +2,153 @@ var firstDivWithPicture = $('#pictureGroup div:has(img):first');
 
 
 var secondToLastChild = $('#pictureGroup div:nth-last-child(-n+2)');
-// secondToLastChild.addClass('sidePic');
 
+      // $(document).ready(function() {
+      //   // Animation for the main logo
 
+      //   setTimeout(function() {
+      //   $('.mainLogo').css('transform', 'rotate(45deg)');
+      // }, 1000);
+      //   // Animation for the about me icon
+      //   setTimeout(function() {
+      //     $('.aboutMeIcon').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   },1500);
+      
+      //   // Animation for the experience icon
+      //   setTimeout(function() {
+      //     $('.experienceIcon').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 2000);
+      
+      //   // Animation for the project icon
+      //   setTimeout(function() {
+      //     $('.projectIcon').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 2500);
 
-// $(document).ready(function() {
-//     var projects = [
-//         {
-//             name: "RTU UCCAE Form Management System",
-//             image: "img/Project1.png",
-//             demoLink: "",
-//             sourceLink: "",
-//             languages: ["Laravel", "jQuery", "Bootstrap", "MySQL"],
-//             description: 
-//             "During my <span class='text-light'>internship</span> at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing."
-//         },
-//         {
-//             name: "Right Meal Registration Website",
-//             image: "img/Project2.png",
-//             demoLink: "",
-//             sourceLink: "",
-//             languages: ["PHP", "Bootstrap"],
-//             description: "In this exciting video, we'll take you on a virtual tour of the website's sections..."
-//         }
-//     ];
-  
-//     var component = $('#projects');
-  
-//     projects.forEach(function(project) {
-//         var projectItemComponent = `
-//             <div class="row g-0 brit-font my-5 py-2">
+      //   setTimeout(function() {
+      //     $('#outLineTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 3000);
 
-//                 <div class="col-12 col-lg-3">
-//                     <div class="me-0 me-lg-4 text-start text-lg-end h-100">
-//                         <div class="d-flex flex-column h-100">
-//                             <div class="">${project.name}</div>
-//                             <div class="text-light-emphasis"></div>
-//                             <div class="text-light-emphasis"></div>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div div class="col-12 col-lg-9">
-//                     <div class="position-relative mt-1">
+      //   setTimeout(function() {
+      //     $('#nameTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 3700);
 
-//                         <div>
-//                             <div>
-//                                 <img src="${project.image}" alt="" class="img-fluid"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experience">
-//                             </div>
-//                         </div>
-//                         <div class="mt-3">
-//                             <div class="d-flex align-items-center py-1 justify-content-between flex-wrap">
-//                                 <div class="d-flex py-1 linkDiv">
-//                                     <a href="${project.demoLink}"><div>DEMO</div></a>
-//                                     <a href="${project.sourceLink}" class="px-2"><div>SOURCE</div></a>
-//                                 </div>
-//                                 <div class="d-flex py-1 flex-wrap langDiv">
-//                                     ${project.languages.map(function(language) {
-//                                     return `<div class="px-2 m-1">${language}</div>`;
-//                                     }).join('')}
-//                                 </div>
-//                             </div>
-//                         </div>
-//                         <div>
-//                             <div class="mt-3 text-light-emphasis">${project.description}</div>
-//                         </div>
-
-//                     </div>
-//                 </div>
-//             </div>`;
-  
-//             component.append(projectItemComponent);
-//         });
-// });
-  
-// $(document).ready(function() {
-//     // Autoplay the video on hover
-//     $('.videoDiv video').on('mouseenter', function() {
-//       this.play();
-//     }).on('mouseleave', function() {
-//       this.pause();
-//     });
-  
-//     // Toggle play/pause on click
-//     $('.videoDiv').on('click', function() {
-//       var video = $(this).find('video')[0];
-//       if (video.paused) {
-//         video.play();
-//       } else {
-//         video.pause();
-//       }
-//     });
-
-    
-//   });
-
-//   $(document).ready(function() {
-//     var video = $('.videoDiv video')[0]; // Get the video element
-  
-//     // Toggle play/pause on button click
-//     $('#demoBtn').on('click', function() {
-//       if (video.paused) {
-//         video.play();
-//       } else {
-//         video.pause();
-//       }
-//     });
-//   });
-  
-
-//   $(document).ready(function() {
-//     // Autoplay the video on hover
-//     $('.videoDiv1 video').on('mouseenter', function() {
-//       this.play();
-//     }).on('mouseleave', function() {
-//       this.pause();
-//     });
-  
-//     // Toggle play/pause on click
-//     $('.videoDiv').on('click', function() {
-//       var video = $(this).find('video')[0];
-//       if (video.paused) {
-//         video.play();
-//       } else {
-//         video.pause();
-//       }
-//     });
-
-    
-//   });
-
-//   $(document).ready(function() {
-//     var video = $('.videoDiv1 video')[0]; // Get the video element
-  
-//     // Toggle play/pause on button click
-//     $('#demoBtn1').on('click', function() {
-//       if (video.paused) {
-//         video.play();
-//       } else {
-//         video.pause();
-//       }
-//     });
-//   });
-  
-
-
-//   $(document).ready(function() {
-//     // Define the component function
-//     function createComponent(videoSrc, title, sourceLink, languages, description, videoId, projectId) {
-//       // Create the HTML structure
-//       var componentHtml = `
-//         <div class="row g-0 brit-font mt-5 py-1 projectId${projectId}">
-//           <div class="col-12 col-lg-7">
-//             <div class="me-0 me-lg-4 text-start text-lg-end h-100">
-//               <div class="d-flex flex-column h-100">
-//                 <div class="videoDiv${videoId}">
-//                   <video loop muted src="${videoSrc}" alt="" class="img-fluid"></video>
-//                 </div>
-//                 <div class="text-light-emphasis"></div>
-//                 <div class="text-light-emphasis"></div>
-//               </div>
-//             </div>
-//           </div>
-//           <div class="col-12 col-lg-5">
-//             <div class="position-relative mt-1">
-//               <div>
-//                 <div>
-//                   <div>
-//                     <div>${title}</div>
-//                   </div>
-//                 </div>
-//                 <div class="mt-3">
-//                   <div class="d-flex align-items-center justify-content-between flex-wrap">
-//                     <div class="d-flex py-1 linkDiv">
-//                       <a href="${sourceLink}" class="">
-//                         <div>SOURCE</div>
-//                       </a>
-//                     </div>
-//                     <div class="d-flex py-1 flex-wrap langDiv">
-//                       ${languages.map(language => `<div class="px-2 m-1">${language}</div>`).join('')}
-//                     </div>
-//                   </div>
-//                 </div>
-//                 <div>
-//                   <div class="mt-3 text-light-emphasis">${description}</div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       `;
-
-//       return componentHtml;
-//     }
-
-//     // Create an array of component data
-//     var componentsData = [
-//       {
-//         videoSrc: 'vid/RMR.mp4',
-//         title: 'Right Meal <br> Registration System',
-//         sourceLink: '',
-//         languages: ['Laravel', 'jQuery', 'Bootstrap', 'MySQL'],
-//         description: 'During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company\'s website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.',
-//         videoId: '',
-//         projectId: '',
-//       },
-//       {
-//         videoSrc: 'vid/GC.mp4',
-//         title: 'Go Cart <br>E-Commerce Shopping Cart System',
-//         sourceLink: '',
-//         languages: ['PHP', 'Bootstrap', 'MySQL'],
-//         description: 'In this exciting video, we\'ll take you on a virtual tour of the website\'s sections, including the best seller menu where you can click and explore our delectable offerings. Discover more about our restaurant in the about section, get in touch with us through the contact section, and find answers to common queries in the FAQ section.',
-//         videoId: '1',
-//         projectId: '1',
-//       },
-
-
-
-
-//       {
-//         videoSrc: 'vid/BHSIIS.mp4',
-//         title: 'BlueHats <br> Student Information Inventory System',
-//         sourceLink: '',
-//         languages: ['PHP', 'Bootstrap', 'MySQL'],
-//         description: 'In this exciting video, we\'ll take you on a virtual tour of the website\'s sections, including the best seller menu where you can click and explore our delectable offerings. Discover more about our restaurant in the about section, get in touch with us through the contact section, and find answers to common queries in the FAQ section.',
-//         videoId: '2',
-//         projectId: '2',
-//       },
-//       // Add more component data as needed
-//     ];
-
-//     // Render the components
-//     var projectComponent = $('#projectComponent');
-//     componentsData.forEach(function(componentData) {
-//       var componentHtml = createComponent(
-//         componentData.videoSrc,
-//         componentData.title,
-//         componentData.sourceLink,
-//         componentData.languages,
-//         componentData.description,
-//         componentData.videoId,
-//         componentData.projectId,
-//       );
-//       projectComponent.append(componentHtml);
-//     });
-
-//     // Attach event handlers
-//     componentsData.forEach(function(componentData) {
-//       var video = $(`.videoDiv${componentData.videoId} video`)[0];
-
-  
-
-//         $(`.projectId${componentData.projectId}`)
-//         .on('mouseenter', function() {
-//             video.play();
-//         })
-//         .on('mouseleave', function() {
-//             video.pause();
-//         });
-
-//         $(`.projectId${componentData.projectId}`).on('click', function() {
-//         if (video.paused) {
-//             video.play();
-//         } else {
-//             video.pause();
-//         }
-//         });
-
-
-  
-//     });
-//   });
-
-
-    //   $(`.videoDiv${componentData.videoId} video`)
-    //     .on('mouseenter', function() {
-    //       this.play();
-    //     })
-    //     .on('mouseleave', function() {
-    //       this.pause();
-    //     });
-
-    //   $(`.videoDiv${componentData.videoId}`).on('click', function() {
-    //     if (video.paused) {
-    //       video.play();
-    //     } else {
-    //       video.pause();
-    //     }
-    //   });
-
-
-
-    // $(document).ready(function() {
-    //     // Define the component function
-    //     var idCounter = 0; // Initialize the counter variable
+      //   setTimeout(function() {
+      //     $('#subTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 4000);
+      //   setTimeout(function() {
+      //     $('#subTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 4000);
         
-    //     function createComponent(videoSrc, title, sourceLink, siteLink, languages, description) {
-    //       // Create the HTML structure
-    //       idCounter++; // Increment the counter variable
-          
-    //       var componentHtml = `
-    //         <div class="row g-0 brit-font mt-5 py-5 projectId${idCounter}">
-    //           <div class="col-12 col-lg-7">
-    //             <div class=" me-0 me-lg-4 text-start text-lg-end h-100">
-    //               <div class="d-flex flex-column h-100">
-    //                 <div class="videoDiv${idCounter}">
-    //                   <video loop muted src="${videoSrc}" alt="" class="img-fluid"></video>
-    //                 </div>
-    //                 <div class="text-light-emphasis"></div>
-    //                 <div class="text-light-emphasis"></div>
-    //               </div>
-    //             </div>
-    //           </div>
-    //           <div class="col-12 col-lg-5">
-    //             <div class="position-relative mt-1">
-    //               <div>
-    //                 <div>
-    //                   <div>
-    //                     <div>${title}</div>
-    //                   </div>
-    //                 </div>
-    //                 <div class="mt-3">
-    //                   <div class="d-flex align-items-center justify-content-between flex-wrap">
-    //                     <div class="d-flex py-1 linkDiv">
-    //                       <a href="${sourceLink}" class="">
-    //                         <div>SOURCE</div>
-    //                       </a>
 
-    //                         <a href="${siteLink}" class="ps-3">
-    //                             <div>SITE</div>
-    //                         </a>
-    //                     </div>
-    //                     <div class="d-flex py-1 flex-wrap langDiv">
-    //                       ${languages.map(language => `<div class="px-2 m-1">${language}</div>`).join('')}
-    //                     </div>
-    //                   </div>
-    //                 </div>
-    //                 <div>
-    //                   <div class="mt-3 text-light-emphasis">${description}</div>
-    //                 </div>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       `;
-      
-    //       return componentHtml;
-    //     }
-      
-    //     // Create an array of component data
-    //     var componentsData = [
-    //       {
-    //         videoSrc: 'vid/RMR.mp4',
-    //         title: 'Right Meal <br> Registration System',
-    //         sourceLink: '',
-    //         siteLink: '',
-    //         languages: ['Laravel', 'jQuery', 'Bootstrap', 'MySQL'],
-    //         description: 'During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company\'s website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.',
-    //       },
-    //       {
-    //         videoSrc: 'vid/GC.mp4',
-    //         title: 'Go Cart <br>E-Commerce Shopping Cart System',
-    //         sourceLink: '',
-    //         siteLink: '',
-    //         languages: ['PHP', 'Bootstrap', 'MySQL'],
-    //         description: 'In this exciting video, we\'ll take you on a virtual tour of the website\'s sections, including the best seller menu where you can click and explore our delectable offerings. Discover more about our restaurant in the about section, get in touch with us through the contact section, and find answers to common queries in the FAQ section.',
-    //       },
-    //       {
-    //         videoSrc: 'vid/BHSIIS.mp4',
-    //         title: 'BlueHats <br> Student Information Inventory System',
-    //         sourceLink: '',
-    //         siteLink: '',
-    //         languages: ['PHP', 'Bootstrap', 'MySQL'],
-    //         description: 'In this exciting video, we\'ll take you on a virtual tour of the website\'s sections, including the best seller menu where you can click and explore our delectable offerings. Discover more about our restaurant in the about section, get in touch with us through the contact section, and find answers to common queries in the FAQ section.',
-    //       },
-    //       // Add more component data as needed
-    //     ];
-      
-    //     // Render the components
-    //     var projectComponent = $('#projectComponent');
-    //     componentsData.forEach(function(componentData) {
-    //       var componentHtml = createComponent(
-    //         componentData.videoSrc,
-    //         componentData.title,
-    //         componentData.sourceLink,
-    //         componentData.siteLink,
-    //         componentData.languages,
-    //         componentData.description,
-    //       );
-    //       projectComponent.append(componentHtml);
-    //     });
-      
-    //     // Attach event handlers
-    //     componentsData.forEach(function(componentData, index) {
-    //       var video = $(`.videoDiv${index + 1} video`)[0];
-      
-    //       $(`.projectId${index + 1}`)
-    //         .on('mouseenter', function() {
-    //           video.play();
-    //         })
-    //         .on('mouseleave', function() {
-    //           video.pause();
-    //         });
-      
-    //       $(`.projectId${index + 1}`).on('click', function() {
-    //         if (video.paused) {
-    //           video.play();
-    //         } else {
-    //           video.pause();
-    //         }
-    //       });
-    //     });
-    //   });
-      
+
+      //   setTimeout(function() {
+      //     $('#3rdBeam').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 4500);
+      //   setTimeout(function() {
+      //     $('#2ndBeam').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 4600);
+      //   setTimeout(function() {
+      //     $('#1stBeam').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 4800);
+
+
+
+      //   setTimeout(function() {
+      //     $('#containTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 5000);
+      //   setTimeout(function() {
+      //     $('#objTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 5200);
+
+      //   setTimeout(function() {
+      //     $('#preResTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 5500);
+
+      //   setTimeout(function() {
+      //     $('#dowResTitle').css({
+      //       'opacity': '1',
+      //       'transform': 'translateY(0)'
+      //     });
+      //   }, 5700);
+      // });
 
       $(document).ready(function() {
+        // Reusable animation function
+        function animateElement(selector, delay) {
+          setTimeout(function() {
+            $(selector).css({
+              'opacity': '1',
+              'transform': 'translateY(0)'
+            });
+          }, delay);
+        }
+      
         // Animation for the main logo
-
         setTimeout(function() {
-        $('.mainLogo').css('transform', 'rotate(45deg)');
-      }, 1000);
+          $('.mainLogo').css('transform', 'rotate(45deg)');
+        }, 1000);
+      
         // Animation for the about me icon
-        setTimeout(function() {
-          $('.aboutMeIcon').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        },1500);
+        animateElement('.aboutMeIcon', 1500);
       
         // Animation for the experience icon
-        setTimeout(function() {
-          $('.experienceIcon').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 2000);
+        animateElement('.experienceIcon', 2000);
       
         // Animation for the project icon
-        setTimeout(function() {
-          $('.projectIcon').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 2500);
-
-        setTimeout(function() {
-          $('#outLineTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 3000);
-
-        setTimeout(function() {
-          $('#nameTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 3700);
-
-        setTimeout(function() {
-          $('#subTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 4000);
-        setTimeout(function() {
-          $('#subTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 4000);
-        
-
-
-        setTimeout(function() {
-          $('#3rdBeam').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 4500);
-        setTimeout(function() {
-          $('#2ndBeam').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 4600);
-        setTimeout(function() {
-          $('#1stBeam').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 4800);
-
-
-
-        setTimeout(function() {
-          $('#containTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 5000);
-        setTimeout(function() {
-          $('#objTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 5200);
-
-        setTimeout(function() {
-          $('#preResTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 5500);
-
-        setTimeout(function() {
-          $('#dowResTitle').css({
-            'opacity': '1',
-            'transform': 'translateY(0)'
-          });
-        }, 5700);
-      });
-
+        animateElement('.projectIcon', 2500);
+      
+        // Animation for other elements
+        animateElement('#outLineTitle', 3000);
+        animateElement('#nameTitle', 3700);
+        animateElement('#subTitle', 4000);
+        animateElement('#3rdBeam', 4500);
+        animateElement('#2ndBeam', 4600);
+        animateElement('#1stBeam', 4800);
+        animateElement('#containTitle', 5000);
+        animateElement('#objTitle', 5200);
+        animateElement('#preResTitle', 5500);
+        animateElement('#dowResTitle', 5700);
+   
+      
 
      function moveUp()  {
       $('#outLineTitle').addClass('removeUp');
@@ -708,7 +334,6 @@ function moveDown(){
   // });
 
 
-  $(document).ready(function() {
     function initializeProject(index, data) {
       const html = `
         <div class="row g-0 brit-font mt-5 py-5 projectId">
@@ -877,5 +502,24 @@ function moveDown(){
     projects.forEach((project, index) => {
       initializeProject(index + 1, project);
     });
-  });
   
+
+  $(window).resize(function() {
+    var windowWidth = $(window).width();
+    if (windowWidth >= 576) {
+      $('#landingPage').addClass('wholePage');
+    } else {
+      $('#landingPage').removeClass('wholePage');
+    }
+  });
+
+  var windowWidth = $(window).width();
+
+  if (windowWidth >= 576) {
+    $('#landingPage').addClass('wholePage');
+  } else {
+    $('#landingPage').removeClass('wholePage');
+  }
+
+});
+
