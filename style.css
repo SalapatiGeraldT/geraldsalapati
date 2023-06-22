@@ -133,14 +133,18 @@ hr{
    
 }
 
+/* .outline-stroke{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    color: #6c757d86;
+} */
 .outline-stroke {
     color: #6c757d86;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     text-stroke-width: 1px; /* For Firefox */
-    -webkit-text-stroke-color: #6c757d86;
-    text-stroke-color: #6c757d86; /* For Firefox */
   }
+
 .impact{
     font-family:'impact' !important;
 
