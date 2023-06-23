@@ -15,7 +15,7 @@ html {
 }
 
 .darkBgBody{
-    background-color: #14171be1;
+    background-color: #171c24;
 }
 
 .brit-font{
@@ -243,6 +243,7 @@ hr{
 
 .horiShine{
     position: relative;
+ 
 
 }
 .horiShine::before,
@@ -269,7 +270,7 @@ hr{
     animation: animation 500s ease infinite;
     /* border-radius: 5px; */
     opacity: 0.3;
-    
+    border-radius: 0.25rem;
 }
 
 .horiShine::after{
@@ -320,8 +321,9 @@ hr{
 }
 .linkDiv div{
     color: #2d9d84;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
+    user-select: none;
 }
 
 
@@ -336,4 +338,35 @@ hr{
 
 .footerBorderTop{
     border-top: 1.9px solid #2d9d84;
+}
+
+
+#preResTitle,
+#dowResTitle
+{
+    cursor: pointer;
+    user-select: none;
+}
+#preResTitle:hover,
+#dowResTitle:hover
+{
+    background-color:#252e38 !important; 
+}
+.linkDiv div:hover{
+    background-color:#252e38 !important; 
+    border-radius: 0.25rem;
+}
+#containTitle{
+
+}
+
+.coloredBorder{
+    background: linear-gradient(45deg, 
+    #0186af, #0a5663,
+   #2d9d69 , 
+     #034868,   #066083, #156e7e
+   );
+    padding: 2px;
+
+    border-radius: 0.25rem;
 }

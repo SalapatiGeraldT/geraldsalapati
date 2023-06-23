@@ -120,19 +120,19 @@ $(document).ready(function () {
   // Animation for the main logo
   setTimeout(function () {
     $(".mainLogo").css("transform", "rotate(45deg)");
-  }, 1000);
+  }, 800);
 
   // Animation for the about me icon
-  animateElement(".aboutMeIcon", 1500);
+  animateElement(".aboutMeIcon", 1000);
 
   // Animation for the experience icon
-  animateElement(".experienceIcon", 2000);
+  animateElement(".experienceIcon", 1500);
 
   // Animation for the project icon
-  animateElement(".projectIcon", 2500);
+  animateElement(".projectIcon", 2000);
 
   // Animation for other elements
-  animateElement("#outLineTitle", 3000);
+  animateElement("#outLineTitle", 2500);
   animateElement("#nameTitle", 3700);
   animateElement("#subTitle", 4000);
   animateElement("#3rdBeam", 4500);
@@ -217,7 +217,7 @@ $(document).ready(function () {
   function initializeProject(index, data) {
     const html = `
         <div class="row g-0 brit-font mt-5 py-5 projectId">
-          <div class="col-12 col-lg-7">
+          <div class="col-12 col-lg-5">
             <div class="me-0 me-lg-4 text-start text-lg-end h-100">
               <div class="d-flex flex-column h-100">
                 <div class="demoDiv${index} hidden leftInAnimate">
@@ -237,7 +237,7 @@ $(document).ready(function () {
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-5">
+          <div class="col-12 col-lg-7">
             <div class="position-relative mt-1">
               <div>
                 <div>
@@ -248,11 +248,23 @@ $(document).ready(function () {
                 <div class="mt-3">
                   <div class="d-flex align-items-center justify-content-between flex-wrap">
                     <div class="d-flex py-1 linkDiv">
-                      <div id="" class="demoSwitch${index}" >
-                        <div>DEMO</div>
-                      </div>
-                      <div id=" "  class="picSwitch${index} hidden" >
-                        <div>PICTURE</div>
+                      <div id="" class="position-relative demoSwitch${index}" >
+                          <div class="horiShine">
+                            <div class="bgBody px-2 rounded-1">
+                              DEMO
+                            </div>
+                          </div>
+                        </div>
+                      
+                      <div id=" "  class="position-relative picSwitch${index} hidden" >
+                        <div class="horiShine">
+                        <div  class="bgBody px-2 rounded-1">
+                        PICTURE
+                        </div>
+
+                        </div>
+                     
+                        
                       </div>
                       ${generateSiteTags(data)}
                     </div>
@@ -284,7 +296,11 @@ $(document).ready(function () {
   function generateSiteTags(data) {
     if (data.siteLink !== "") {
       return `<a href="${data.siteLink}" class="ms-3">
-          <div>SITE</div>
+          <div class="horiShine">
+          <div class="bgBody px-2 rounded-1">
+            SITE
+          </div>
+        </div>
         </a>`;
     } else {
       return "";
@@ -328,6 +344,15 @@ $(document).ready(function () {
 
   const projects = [
     {
+      title: "RTU UCCAE <br> Form Management System",
+      videoSrc: "https://www.youtube-nocookie.com/embed/5WHEDc3-qME",
+      imageSrc: "img/Project1.png",
+      siteLink: "http://13.251.135.208/",
+      languages: ["Laravel", "jQuery", "Bootstrap", "MySQL"],
+      description:
+        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+    },
+    {
       title: "Right Meal <br> Registration System",
       videoSrc: "https://www.youtube-nocookie.com/embed/w-O7tRaQPjg",
       imageSrc: "img/Project2.png",
@@ -339,7 +364,7 @@ $(document).ready(function () {
     {
       title: "Go Cart <br>E-Commerce Shopping Cart System",
       videoSrc: "https://www.youtube-nocookie.com/embed/Q732exsLt6o",
-      imageSrc: "img/Project1.png",
+      imageSrc: "img/Project3.png",
       siteLink: "",
       languages: ["PHP", "Bootstrap", "MySQL"],
       description:
@@ -349,7 +374,7 @@ $(document).ready(function () {
     {
       title: "BlueHats <br> Student Information Inventory System",
       videoSrc: "https://www.youtube-nocookie.com/embed/RJEFC1zFwRA",
-      imageSrc: "img/Project1.png",
+      imageSrc: "img/Project4.png",
       siteLink: "",
       languages: ["PHP", "Bootstrap", "MySQL"],
       description:
@@ -358,7 +383,7 @@ $(document).ready(function () {
     {
       title: "Matech <br> Payroll Application",
       videoSrc: "https://www.youtube-nocookie.com/embed/PDEJOf1Z9vk",
-      imageSrc: "img/Project1.png",
+      imageSrc: "img/Project5.png",
       siteLink: "",
       languages: ["PHP", "CSS"],
       description:
@@ -368,7 +393,7 @@ $(document).ready(function () {
     {
       title: "Matech <br> Calculator Hub System",
       videoSrc: "https://www.youtube-nocookie.com/embed/3lc9Sm5zPog",
-      imageSrc: "img/Project1.png",
+      imageSrc: "img/Project6.png",
       siteLink: "",
       languages: ["PHP", "CSS"],
       description:
@@ -378,7 +403,7 @@ $(document).ready(function () {
     {
       title: "Talap Pinoy Company <br> Registration System",
       videoSrc: "https://www.youtube-nocookie.com/embed/eOQ1U8fGzJM",
-      imageSrc: "img/Project1.png",
+      imageSrc: "img/Project7.png",
       siteLink: "",
       languages: ["PHP", "CSS"],
       description:
@@ -407,7 +432,36 @@ $(document).ready(function () {
   } else {
     $("#landingPage").removeClass("wholePage");
   }
+
+
+
+
+
+  $("#preResTitle").click(function() {
+    var fileUrl = 'file/Salapati_Resume.pdf';
+    window.open(fileUrl, '_blank');
+  });
+
+  $('#dowResTitle').click(function() {
+    var fileUrl = 'file/Salapati_Resume.pdf';
+    var fileName = 'Salapati_Resume.pdf';
+    var link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+
+
+  $("#backAtTheTop").click(function() {
+    $(window).scrollTop(0);
+  });
+
 });
+
+
 
 function moveUp() {
   $("#outLineTitle").addClass("removeUp");
