@@ -216,7 +216,7 @@ $(document).ready(function () {
 
   function initializeProject(index, data) {
     const html = `
-        <div class="row g-0 brit-font mt-5 py-5 projectId">
+        <div class="row g-0 brit-font mt-5 pb-5 projectId">
           <div class="col-12 col-lg-5">
             <div class="me-0 me-lg-4 text-start text-lg-end h-100">
               <div class="d-flex flex-column h-100">
@@ -323,7 +323,7 @@ $(document).ready(function () {
   }
   function attachEventHandlers(index) {
     const demoSwitchSelector = `.demoSwitch${index}`;
-    const picSwitchSelector = `.picSwitch${index}`;
+    const picSwitchSelector = `.picSwitch${index}, .picDiv${index}`;
 
     $(demoSwitchSelector).on("click", () => {
       if ($(`.demoDiv${index}`).hasClass("hidden")) {
@@ -344,70 +344,70 @@ $(document).ready(function () {
 
   const projects = [
     {
-      title: "RTU UCCAE <br> Form Management System",
+      title: "RTU UCCAE <br> Form Management System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/5WHEDc3-qME",
       imageSrc: "img/Project1.png",
       siteLink: "http://13.251.135.208/",
       languages: ["Laravel", "jQuery", "Bootstrap", "MySQL"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+      "As our final project this website help the organization overcome operational challenges encountered during the audition, membership, and scholarship processes. By providing a digital platform to manage all necessary forms and documents, the system streamlines processes, reduces difficulties, and ensures that required documents are submitted promptly."
     },
     {
-      title: "Right Meal <br> Registration System",
+      title: "Right Meal <br> Registration System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/w-O7tRaQPjg",
       imageSrc: "img/Project2.png",
       siteLink: "https://rightmeal-frontend.netlify.app/",
       languages: ["PHP", "Bootstrap", "MySQL"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+        "For our project in a subject, we were told to create a business website with a registration feature. We chose a restaurant theme and recreated our previous design using Bootstrap. The restaurant's concept focuses on serving healthy, low-calorie food. Inspired by websites like The Aristocrat, we designed every section accordingly. Our website earned a perfect score, and I take pride in programming it entirely by myself.",
     },
     {
-      title: "Go Cart <br>E-Commerce Shopping Cart System",
+      title: "Go Cart <br>E-Commerce Shopping Cart System <br> <span class='text-light-emphasis'>Support Back-end & Front-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/Q732exsLt6o",
       imageSrc: "img/Project3.png",
       siteLink: "",
-      languages: ["PHP", "Bootstrap", "MySQL"],
+      languages: ["PHP", "Bootstrap"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+        "Given a backend, we were tasked to create a frontend and modify the given code. Despite encountering errors, we successfully fixed them and made the code functional. Opting for a pink color palette, we designed interactive components to enhance user experience and promote user retention.",
     },
 
     {
-      title: "BlueHats <br> Student Information Inventory System",
+      title: "BlueHats <br> Student Information Inventory System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/RJEFC1zFwRA",
       imageSrc: "img/Project4.png",
       siteLink: "",
       languages: ["PHP", "Bootstrap", "MySQL"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+        "This is a system that allows you to perform CRUD operations on student records.  You can add new students, edit their details, view their information, and delete them from the database. This system has two types of users: admin and user. The admin can perform all CRUD operations, while the user can only add new students. This system is simple but has its own identity with the design.",
     },
     {
-      title: "Matech <br> Payroll Application",
+      title: "Matech <br> Payroll Application <br> <span class='text-light-emphasis'>Back-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/PDEJOf1Z9vk",
       imageSrc: "img/Project5.png",
       siteLink: "",
       languages: ["PHP", "CSS"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+        "In our collaborative effort, we were tasked with creating a payroll application, granting us the freedom to choose which components to include. We developed a payroll application collectively, dedicating extensive research to determine the essential components. I formulated the logic and generated a comprehensive table illustrating the calculation process for each item. A teammate ensured responsiveness, while another chose the color palette. This is also the first time we have made the website interactive, which was done by one of our team members.",
     },
 
     {
-      title: "Matech <br> Calculator Hub System",
+      title: "Matech <br> Calculator Hub System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/3lc9Sm5zPog",
       imageSrc: "img/Project6.png",
       siteLink: "",
       languages: ["PHP", "CSS"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+        "As a full stack developer, I implemented all the logic for calculations and designed a child-friendly website theme with a unique brand. I utilized CSS selectors to create interactive form components and incorporated playful graphics created using Adobe Illustrator. The graphics are not only visually appealing but also informative, as I include meanings and formulas on the result page. Additionally, I included a warning message during the third attempt of calculation to confirm if the user wishes to continue with their session, as instructed by our professor.",
     },
 
     {
-      title: "Talap Pinoy Company <br> Registration System",
+      title: "Talap Pinoy Company <br> Registration System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/eOQ1U8fGzJM",
       imageSrc: "img/Project7.png",
       siteLink: "",
       languages: ["PHP", "CSS"],
       description:
-        "During my internship at a company, I was assigned to the Quality Assurance team where I gained valuable experience in software testing. I was responsible for testing various functionalities of the company's website by following a provided list of test cases and comparing the expected results with the actual outcomes. I actively collaborated with the programmers, discussing any discrepancies or conflicts encountered during testing.",
+        "N/A"
     },
     // Add more project objects here
   ];

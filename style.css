@@ -362,9 +362,9 @@ hr{
 
 .coloredBorder{
     background: linear-gradient(45deg, 
-    #0186af, #0a5663,
+    #08abdd, #0a5663,
    #2d9d69 , 
-     #034868,   #066083, #156e7e
+     #034868,   #066083, #0cb1e4
    );
     padding: 2px;
 
