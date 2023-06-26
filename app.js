@@ -108,40 +108,70 @@ var secondToLastChild = $("#pictureGroup div:nth-last-child(-n+2)");
 
 $(document).ready(function () {
   // Reusable animation function
-  function animateElement(selector, delay) {
-    setTimeout(function () {
-      $(selector).css({
-        opacity: "1",
-        transform: "translateY(0)",
-      });
-    }, delay);
-  }
+ 
 
   // Animation for the main logo
   setTimeout(function () {
     $(".mainLogo").css("transform", "rotate(45deg)");
   }, 800);
 
+
+
   // Animation for the about me icon
-  animateElement(".aboutMeIcon", 1000);
+
+  
 
   // Animation for the experience icon
-  animateElement(".experienceIcon", 1500);
+ 
 
   // Animation for the project icon
-  animateElement(".projectIcon", 2000);
 
   // Animation for other elements
-  animateElement("#outLineTitle", 2500);
-  animateElement("#nameTitle", 3700);
-  animateElement("#subTitle", 4000);
-  animateElement("#3rdBeam", 4500);
-  animateElement("#2ndBeam", 4600);
-  animateElement("#1stBeam", 4800);
-  animateElement("#containTitle", 5000);
-  animateElement("#objTitle", 5200);
-  animateElement("#preResTitle", 5500);
-  animateElement("#dowResTitle", 5700);
+ 
+  function animateElement(selector, delay, callback) {
+    setTimeout(function () {
+      $(selector).css({
+        opacity: "1",
+        transform: "translateY(0)",
+      });
+      console.log("asdasd");
+      if (callback) {
+        callback();
+      }
+    }, delay);
+  }
+  
+  const animations = [
+    { selector: ".aboutMeIcon", duration: 1000 },
+    { selector: ".experienceIcon", duration: 500 },
+    { selector: ".projectIcon", duration: 500 },
+    { selector: "#outLineTitle", duration: 500 },
+    { selector: "#nameTitle", duration: 200 },
+    { selector: "#subTitle", duration: 300 },
+    { selector: "#3rdBeam", duration: 500 },
+    { selector: "#2ndBeam", duration: 100 },
+    { selector: "#1stBeam", duration: 200 },
+    { selector: "#containTitle", duration: 200 },
+    { selector: "#objTitle", duration: 200 },
+    { selector: "#preResTitle", duration: 200 },
+    { selector: "#dowResTitle", duration: 200 }
+  ];
+  
+  function animateElements(index) {
+    if (index >= animations.length) {
+      return;
+    }
+  
+    const animation = animations[index];
+    animateElement(animation.selector, animation.duration, function() {
+      animateElements(index + 1);
+    });
+  }
+  
+  animateElements(0);
+  
+  
+ 
 
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 308) {
@@ -556,3 +586,4 @@ function idleScreen() {
   }
 }
 idleScreen();
+
