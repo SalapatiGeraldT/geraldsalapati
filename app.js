@@ -387,7 +387,7 @@ $(document).ready(function () {
       videoSrc: "https://www.youtube-nocookie.com/embed/w-O7tRaQPjg",
       imageSrc: "img/Project2.png",
       siteLink: "https://rightmeal-frontend.netlify.app/",
-      languages: ["PHP", "Bootstrap", "MySQL"],
+      languages: ["PHP", "Javascript", "Bootstrap", "MySQL"],
       description:
         "For our project in a subject, we were told to create a business website with a registration feature. We chose a restaurant theme and recreated our previous design using Bootstrap. The restaurant's concept focuses on serving healthy, low-calorie food. Inspired by websites like The Aristocrat, we designed every section accordingly. Our website earned a perfect score, and I take pride in programming it entirely by myself.",
     },
@@ -396,7 +396,7 @@ $(document).ready(function () {
       videoSrc: "https://www.youtube-nocookie.com/embed/Q732exsLt6o",
       imageSrc: "img/Project3.png",
       siteLink: "",
-      languages: ["PHP", "Bootstrap"],
+      languages: ["PHP", "Javascript", "Bootstrap"],
       description:
         "Given a backend, we were tasked to create a frontend and modify the given code. Despite encountering errors, we successfully fixed them and made the code functional. Opting for a pink color palette, we designed interactive components to enhance user experience and promote user retention.",
     },
@@ -406,7 +406,7 @@ $(document).ready(function () {
       videoSrc: "https://www.youtube-nocookie.com/embed/RJEFC1zFwRA",
       imageSrc: "img/Project4.png",
       siteLink: "",
-      languages: ["PHP", "Bootstrap", "MySQL"],
+      languages: ["PHP", "Javascript", "Bootstrap", "MySQL"],
       description:
         "This is a system that allows you to perform CRUD operations on student records.  You can add new students, edit their details, view their information, and delete them from the database. This system has two types of users: admin and user. The admin can perform all CRUD operations, while the user can only add new students. This system is simple but has its own identity with the design.",
     },
@@ -415,29 +415,29 @@ $(document).ready(function () {
       videoSrc: "https://www.youtube-nocookie.com/embed/PDEJOf1Z9vk",
       imageSrc: "img/Project5.png",
       siteLink: "",
-      languages: ["PHP", "CSS"],
+      languages: ["PHP",  "CSS"],
       description:
         "In our collaborative effort, we were tasked with creating a payroll application, granting us the freedom to choose which components to include. We developed a payroll application collectively, dedicating extensive research to determine the essential components. I formulated the logic and generated a comprehensive table illustrating the calculation process for each item. A teammate ensured responsiveness, while another chose the color palette. This is also the first time we have made the website interactive, which was done by one of our team members.",
     },
 
     {
-      title: "Matech <br> Calculator Hub System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
+      title: "Matech <br> Calculator Hub System <br> <span class='text-light-emphasis'>Back-end & Lead Front-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/3lc9Sm5zPog",
       imageSrc: "img/Project6.png",
       siteLink: "",
-      languages: ["PHP", "CSS"],
+      languages: ["PHP",  "CSS"],
       description:
         "As a full stack developer, I implemented all the logic for calculations and designed a child-friendly website theme with a unique brand. I utilized CSS selectors to create interactive form components and incorporated playful graphics created using Adobe Illustrator. The graphics are not only visually appealing but also informative, as I include meanings and formulas on the result page. Additionally, I included a warning message during the third attempt of calculation to confirm if the user wishes to continue with their session, as instructed by our professor.",
     },
 
     {
-      title: "Talap Pinoy Company <br> Registration System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
+      title: "Talap Pinoy Company <br> Registration System <br> <span class='text-light-emphasis'>Back-end & Lead Front-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/eOQ1U8fGzJM",
       imageSrc: "img/Project7.png",
       siteLink: "",
-      languages: ["PHP", "CSS"],
+      languages: ["PHP","Javascript", "CSS"],
       description:
-        "N/A"
+        "We were asked to create a registration form with restrictions. In order to make it a unique website, our team decided to design it as a registration form for a business restaurant website. As a backend developer, I implemented most of the restrictions using attributes of the HTML input elements and JavaScript codes. I also decided to incorporate a glass theme and animated borders in CSS to add interactive features. Additionally, my colleague created promotional graphics and selected a suitable background to truly give it the appearance of a restaurant website."
     },
     // Add more project objects here
   ];
