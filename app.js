@@ -463,6 +463,8 @@ $(document).ready(function () {
       $("#landingPage").addClass("wholePage");
 
 
+      $("#outLineTitle").addClass("titles");
+      $("#nameTitle").addClass("titles");
       $("#subTitle").addClass("titles");
       $("#containTitle").addClass("titles");
       $("#objTitle").addClass("titles");
@@ -476,7 +478,9 @@ $(document).ready(function () {
 
     } else {
       $("#landingPage").removeClass("wholePage");
-
+      
+      $("#outLineTitle").removeClass("titles");
+      $("#nameTitle").removeClass("titles");
       $("#subTitle").removeClass("titles");
       $("#containTitle").removeClass("titles");
       $("#objTitle").removeClass("titles");
@@ -496,6 +500,8 @@ $(document).ready(function () {
   if (windowWidth >= 576) {
     $("#landingPage").addClass("wholePage");
 
+    $("#outLineTitle").addClass("titles");
+    $("#nameTitle").addClass("titles");
     $("#subTitle").addClass("titles");
     $("#containTitle").addClass("titles");
     $("#objTitle").addClass("titles");
@@ -509,7 +515,8 @@ $(document).ready(function () {
   } else {
     $("#landingPage").removeClass("wholePage");
 
-    
+    $("#outLineTitle").removeClass("titles");
+    $("#nameTitle").removeClass("titles");
     $("#subTitle").removeClass("titles");
     $("#containTitle").removeClass("titles");
     $("#objTitle").removeClass("titles");
