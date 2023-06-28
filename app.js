@@ -176,8 +176,13 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 308) {
       $(".stickyTopNav").addClass("navShine");
+
+    
+
     } else {
       $(".stickyTopNav").removeClass("navShine");
+
+
     }
   });
 
@@ -260,7 +265,7 @@ $(document).ready(function () {
                   </iframe>
                 </div>
                 <div class="picDiv${index} leftInAnimate">
-                  <img src="${data.imageSrc}" alt="" class="img-fluid">
+                  <img src="${data.imageSrc}" alt="${data.imageDesc}" class="img-fluid">
                 </div>
                 <div class="text-light-emphasis"></div>
                 <div class="text-light-emphasis"></div>
@@ -377,7 +382,8 @@ $(document).ready(function () {
       title: "RTU UCCAE <br> Form Management System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/5WHEDc3-qME",
       imageSrc: "img/Project1.png",
-      siteLink: "http://13.251.135.208/",
+      imageDesc: "RTU UCCAE Form Management Dashboard",
+      siteLink: "https://rtu-uccae-fms.site/",
       languages: ["Laravel", "jQuery", "Bootstrap", "MySQL"],
       description:
       "As our final project this website help the organization overcome operational challenges encountered during the audition, membership, and scholarship processes. By providing a digital platform to manage all necessary forms and documents, the system streamlines processes, reduces difficulties, and ensures that required documents are submitted promptly."
@@ -386,6 +392,7 @@ $(document).ready(function () {
       title: "Right Meal <br> Registration System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/w-O7tRaQPjg",
       imageSrc: "img/Project2.png",
+      imageDesc: "Right Meal Dashboard",
       siteLink: "https://rightmeal-frontend.netlify.app/",
       languages: ["PHP", "Javascript", "Bootstrap", "MySQL"],
       description:
@@ -395,6 +402,7 @@ $(document).ready(function () {
       title: "Go Cart <br>E-Commerce Shopping Cart System <br> <span class='text-light-emphasis'>Support Back-end & Front-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/Q732exsLt6o",
       imageSrc: "img/Project3.png",
+      imageDesc: "Go Cart Cart Summary",
       siteLink: "",
       languages: ["PHP", "Javascript", "Bootstrap"],
       description:
@@ -405,6 +413,7 @@ $(document).ready(function () {
       title: "BlueHats <br> Student Information Inventory System <br> <span class='text-light-emphasis'>Full-stack Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/RJEFC1zFwRA",
       imageSrc: "img/Project4.png",
+      imageDesc: "Blue Hats SIIS Dashboard",
       siteLink: "",
       languages: ["PHP", "Javascript", "Bootstrap", "MySQL"],
       description:
@@ -414,6 +423,7 @@ $(document).ready(function () {
       title: "Matech <br> Payroll Application <br> <span class='text-light-emphasis'>Back-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/PDEJOf1Z9vk",
       imageSrc: "img/Project5.png",
+      imageDesc: "Matech Website",
       siteLink: "",
       languages: ["PHP",  "CSS"],
       description:
@@ -424,6 +434,7 @@ $(document).ready(function () {
       title: "Matech <br> Calculator Hub System <br> <span class='text-light-emphasis'>Back-end & Lead Front-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/3lc9Sm5zPog",
       imageSrc: "img/Project6.png",
+      imageDesc: "Matech Dashboard",
       siteLink: "",
       languages: ["PHP",  "CSS"],
       description:
@@ -434,6 +445,7 @@ $(document).ready(function () {
       title: "Talap Pinoy Company <br> Registration System <br> <span class='text-light-emphasis'>Back-end & Lead Front-end Developer</span>",
       videoSrc: "https://www.youtube-nocookie.com/embed/eOQ1U8fGzJM",
       imageSrc: "img/Project7.png",
+      imageDesc: "Talap Pinoy Registration Interface",
       siteLink: "",
       languages: ["PHP","Javascript", "CSS"],
       description:
@@ -450,8 +462,33 @@ $(document).ready(function () {
     var windowWidth = $(window).width();
     if (windowWidth >= 576) {
       $("#landingPage").addClass("wholePage");
+
+
+      $("#subTitle").addClass("titles");
+      $("#containTitle").addClass("titles");
+      $("#objTitle").addClass("titles");
+      $("#preResTitle").addClass("titles");
+      $("#1stBeam").addClass("titles");
+      $("#2ndBeam").addClass("titles");
+      $("#3rdBeam").addClass("titles");
+      $("#About Me").addClass("aboutMeIcon");
+      $("#Experience").addClass("experienceIcon");
+      $("#Project").addClass("projectIcon");
+
     } else {
       $("#landingPage").removeClass("wholePage");
+
+      $("#subTitle").removeClass("titles");
+      $("#containTitle").removeClass("titles");
+      $("#objTitle").removeClass("titles");
+      $("#preResTitle").removeClass("titles");
+      $("#1stBeam").removeClass("titles");
+      $("#2ndBeam").removeClass("titles");
+      $("#3rdBeam").removeClass("titles");
+      $("#About Me").removeClass("aboutMeIcon");
+      $("#Experience").removeClass("experienceIcon");
+      $("#Project").removeClass("projectIcon");
+      
     }
   });
 
@@ -459,8 +496,31 @@ $(document).ready(function () {
 
   if (windowWidth >= 576) {
     $("#landingPage").addClass("wholePage");
+
+    $("#subTitle").addClass("titles");
+    $("#containTitle").addClass("titles");
+    $("#objTitle").addClass("titles");
+    $("#preResTitle").addClass("titles");
+    $("#1stBeam").addClass("titles");
+    $("#2ndBeam").addClass("titles");
+    $("#3rdBeam").addClass("titles");
+    // $("#AboutMe").addClass("aboutMeIcon");
+    // $("#Experience").addClass("experienceIcon");
+    // $("#Project").addClass("projectIcon");
   } else {
     $("#landingPage").removeClass("wholePage");
+
+    
+    $("#subTitle").removeClass("titles");
+    $("#containTitle").removeClass("titles");
+    $("#objTitle").removeClass("titles");
+    $("#preResTitle").removeClass("titles");
+    $("#1stBeam").removeClass("titles");
+    $("#2ndBeam").removeClass("titles");
+    $("#3rdBeam").removeClass("titles");
+    // $("#AboutMe").removeClass("aboutMeIcon");
+    // $("#Experience").removeClass("experienceIcon");
+    // $("#Project").removeClass("projectIcon");
   }
 
 
