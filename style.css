@@ -370,3 +370,7 @@ hr{
 
     border-radius: 0.25rem;
 }
+
+.noTextDeco{
+    text-decoration: none;
+}
