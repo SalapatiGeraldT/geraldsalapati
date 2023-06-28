@@ -134,7 +134,6 @@ $(document).ready(function () {
         opacity: "1",
         transform: "translateY(0)",
       });
-      console.log("asdasd");
       if (callback) {
         callback();
       }
@@ -471,9 +470,9 @@ $(document).ready(function () {
       $("#1stBeam").addClass("titles");
       $("#2ndBeam").addClass("titles");
       $("#3rdBeam").addClass("titles");
-      $("#About Me").addClass("aboutMeIcon");
-      $("#Experience").addClass("experienceIcon");
-      $("#Project").addClass("projectIcon");
+      $("#AboutMe").addClass("titles");
+      $("#Experience").addClass("titles");
+      $("#Project").addClass("titles");
 
     } else {
       $("#landingPage").removeClass("wholePage");
@@ -485,9 +484,9 @@ $(document).ready(function () {
       $("#1stBeam").removeClass("titles");
       $("#2ndBeam").removeClass("titles");
       $("#3rdBeam").removeClass("titles");
-      $("#About Me").removeClass("aboutMeIcon");
-      $("#Experience").removeClass("experienceIcon");
-      $("#Project").removeClass("projectIcon");
+      $("#AboutMe").removeClass("titles");
+      $("#Experience").removeClass("titles");
+      $("#Project").removeClass("titles");
       
     }
   });
@@ -504,9 +503,9 @@ $(document).ready(function () {
     $("#1stBeam").addClass("titles");
     $("#2ndBeam").addClass("titles");
     $("#3rdBeam").addClass("titles");
-    // $("#AboutMe").addClass("aboutMeIcon");
-    // $("#Experience").addClass("experienceIcon");
-    // $("#Project").addClass("projectIcon");
+    $("#AboutMe").addClass("titles");
+    $("#Experience").addClass("titles");
+    $("#Project").addClass("titles");
   } else {
     $("#landingPage").removeClass("wholePage");
 
@@ -518,9 +517,9 @@ $(document).ready(function () {
     $("#1stBeam").removeClass("titles");
     $("#2ndBeam").removeClass("titles");
     $("#3rdBeam").removeClass("titles");
-    // $("#AboutMe").removeClass("aboutMeIcon");
-    // $("#Experience").removeClass("experienceIcon");
-    // $("#Project").removeClass("projectIcon");
+    $("#AboutMe").removeClass("titles");
+    $("#Experience").removeClass("titles");
+    $("#Project").removeClass("titles");
   }
 
 
