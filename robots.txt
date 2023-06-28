@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://salapatigeraldt.github.io/portfolio/sitemap.xml

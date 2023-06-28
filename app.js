@@ -2,113 +2,84 @@ var firstDivWithPicture = $("#pictureGroup div:has(img):first");
 
 var secondToLastChild = $("#pictureGroup div:nth-last-child(-n+2)");
 
-// $(document).ready(function() {
-//   // Animation for the main logo
-
-//   setTimeout(function() {
-//   $('.mainLogo').css('transform', 'rotate(45deg)');
-// }, 1000);
-//   // Animation for the about me icon
-//   setTimeout(function() {
-//     $('.aboutMeIcon').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   },1500);
-
-//   // Animation for the experience icon
-//   setTimeout(function() {
-//     $('.experienceIcon').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 2000);
-
-//   // Animation for the project icon
-//   setTimeout(function() {
-//     $('.projectIcon').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 2500);
-
-//   setTimeout(function() {
-//     $('#outLineTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 3000);
-
-//   setTimeout(function() {
-//     $('#nameTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 3700);
-
-//   setTimeout(function() {
-//     $('#subTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 4000);
-//   setTimeout(function() {
-//     $('#subTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 4000);
-
-//   setTimeout(function() {
-//     $('#3rdBeam').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 4500);
-//   setTimeout(function() {
-//     $('#2ndBeam').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 4600);
-//   setTimeout(function() {
-//     $('#1stBeam').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 4800);
-
-//   setTimeout(function() {
-//     $('#containTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 5000);
-//   setTimeout(function() {
-//     $('#objTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 5200);
-
-//   setTimeout(function() {
-//     $('#preResTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 5500);
-
-//   setTimeout(function() {
-//     $('#dowResTitle').css({
-//       'opacity': '1',
-//       'transform': 'translateY(0)'
-//     });
-//   }, 5700);
-// });
 
 $(document).ready(function () {
   // Reusable animation function
  
+  $(window).resize(function () {
+    var windowWidth = $(window).width();
+    if (windowWidth >= 576) {
+      $("#landingPage").addClass("wholePage");
+
+
+      $("#outLineTitle").addClass("titles");
+      $("#nameTitle").addClass("titles");
+      $("#subTitle").addClass("titles");
+      $("#containTitle").addClass("titles");
+      $("#objTitle").addClass("titles");
+      $("#preResTitle").addClass("titles");
+      $("#1stBeam").addClass("titles");
+      $("#2ndBeam").addClass("titles");
+      $("#3rdBeam").addClass("titles");
+      $("#AboutMe").addClass("titles");
+      $("#Experience").addClass("titles");
+      $("#Project").addClass("titles");
+
+    } else {
+      $("#landingPage").removeClass("wholePage");
+      
+      $("#outLineTitle").removeClass("titles");
+      $("#nameTitle").removeClass("titles");
+      $("#subTitle").removeClass("titles");
+      $("#containTitle").removeClass("titles");
+      $("#objTitle").removeClass("titles");
+      $("#preResTitle").removeClass("titles");
+      $("#1stBeam").removeClass("titles");
+      $("#2ndBeam").removeClass("titles");
+      $("#3rdBeam").removeClass("titles");
+      $("#AboutMe").removeClass("titles");
+      $("#Experience").removeClass("titles");
+      $("#Project").removeClass("titles");
+      
+    }
+  });
+
+  var windowWidth = $(window).width();
+
+  if (windowWidth >= 576) {
+    $("#landingPage").addClass("wholePage");
+
+    $("#outLineTitle").addClass("titles");
+    $("#nameTitle").addClass("titles");
+    $("#subTitle").addClass("titles");
+    $("#containTitle").addClass("titles");
+    $("#objTitle").addClass("titles");
+    $("#preResTitle").addClass("titles");
+    $("#1stBeam").addClass("titles");
+    $("#2ndBeam").addClass("titles");
+    $("#3rdBeam").addClass("titles");
+    $("#AboutMe").addClass("titles");
+    $("#Experience").addClass("titles");
+    $("#Project").addClass("titles");
+  } else {
+    $("#landingPage").removeClass("wholePage");
+
+    $("#outLineTitle").removeClass("titles");
+    $("#nameTitle").removeClass("titles");
+    $("#subTitle").removeClass("titles");
+    $("#containTitle").removeClass("titles");
+    $("#objTitle").removeClass("titles");
+    $("#preResTitle").removeClass("titles");
+    $("#1stBeam").removeClass("titles");
+    $("#2ndBeam").removeClass("titles");
+    $("#3rdBeam").removeClass("titles");
+    $("#AboutMe").removeClass("titles");
+    $("#Experience").removeClass("titles");
+    $("#Project").removeClass("titles");
+  }
+
+
+
 
   // Animation for the main logo
   setTimeout(function () {
@@ -185,68 +156,7 @@ $(document).ready(function () {
     }
   });
 
-  //     $(document).ready(function() {
-
-  //       function removePic(index){
-  //         $(`.demoDiv${index}`).removeClass('hidden');
-  //         $(`.picDiv${index}`).addClass('hidden');
-  //         $(`.picSwitch${index}`).removeClass('hidden');
-  //         $(`.demoSwitch${index}`).addClass('hidden');
-  //         $(`.projectYTDemo${index}`).removeClass('hidden');
-  //       }
-
-  //       function removeDemo(index)
-  //       {
-  //         $(`.demoDiv${index}`).addClass('hidden');
-  //         $(`.picDiv${index}`).removeClass('hidden');
-  //         $(`.picSwitch${index}`).addClass('hidden');
-  //         $(`.demoSwitch${index}`).removeClass('hidden');
-  //         $(`.projectYTDemo${index}`).addClass('hidden');
-  //       }
-  //   // Toggle play/pause on button click
-  //   $('.demoSwitch1').on('click', function() {
-
-  //     if ($('.demoDiv1').hasClass('hidden')) {
-
-  //       removePic(1);
-  //     } else {
-  //       removeDemo(1);
-  //     }
-  //   });
-
-  //   $('.picSwitch1').on('click', function() {
-
-  //     if ($('.demoDiv1').hasClass('hidden')) {
-  //       removePic(1);
-
-  //     } else {
-  //       removeDemo(1);
-  //     }
-
-  //   });
-
-  //   $('.demoSwitch2').on('click', function() {
-
-  //     if ($('.demoDiv2').hasClass('hidden')) {
-
-  //       removePic(2);
-  //     } else {
-  //       removeDemo(2);
-  //     }
-  //   });
-
-  //   $('.picSwitch2').on('click', function() {
-
-  //     if ($('.demoDiv2').hasClass('hidden')) {
-  //       removePic(2);
-
-  //     } else {
-  //       removeDemo(2);
-  //     }
-
-  //   });
-
-  // });
+  
 
   function initializeProject(index, data) {
     const html = `
@@ -456,80 +366,6 @@ $(document).ready(function () {
   projects.forEach((project, index) => {
     initializeProject(index + 1, project);
   });
-
-  $(window).resize(function () {
-    var windowWidth = $(window).width();
-    if (windowWidth >= 576) {
-      $("#landingPage").addClass("wholePage");
-
-
-      $("#outLineTitle").addClass("titles");
-      $("#nameTitle").addClass("titles");
-      $("#subTitle").addClass("titles");
-      $("#containTitle").addClass("titles");
-      $("#objTitle").addClass("titles");
-      $("#preResTitle").addClass("titles");
-      $("#1stBeam").addClass("titles");
-      $("#2ndBeam").addClass("titles");
-      $("#3rdBeam").addClass("titles");
-      $("#AboutMe").addClass("titles");
-      $("#Experience").addClass("titles");
-      $("#Project").addClass("titles");
-
-    } else {
-      $("#landingPage").removeClass("wholePage");
-      
-      $("#outLineTitle").removeClass("titles");
-      $("#nameTitle").removeClass("titles");
-      $("#subTitle").removeClass("titles");
-      $("#containTitle").removeClass("titles");
-      $("#objTitle").removeClass("titles");
-      $("#preResTitle").removeClass("titles");
-      $("#1stBeam").removeClass("titles");
-      $("#2ndBeam").removeClass("titles");
-      $("#3rdBeam").removeClass("titles");
-      $("#AboutMe").removeClass("titles");
-      $("#Experience").removeClass("titles");
-      $("#Project").removeClass("titles");
-      
-    }
-  });
-
-  var windowWidth = $(window).width();
-
-  if (windowWidth >= 576) {
-    $("#landingPage").addClass("wholePage");
-
-    $("#outLineTitle").addClass("titles");
-    $("#nameTitle").addClass("titles");
-    $("#subTitle").addClass("titles");
-    $("#containTitle").addClass("titles");
-    $("#objTitle").addClass("titles");
-    $("#preResTitle").addClass("titles");
-    $("#1stBeam").addClass("titles");
-    $("#2ndBeam").addClass("titles");
-    $("#3rdBeam").addClass("titles");
-    $("#AboutMe").addClass("titles");
-    $("#Experience").addClass("titles");
-    $("#Project").addClass("titles");
-  } else {
-    $("#landingPage").removeClass("wholePage");
-
-    $("#outLineTitle").removeClass("titles");
-    $("#nameTitle").removeClass("titles");
-    $("#subTitle").removeClass("titles");
-    $("#containTitle").removeClass("titles");
-    $("#objTitle").removeClass("titles");
-    $("#preResTitle").removeClass("titles");
-    $("#1stBeam").removeClass("titles");
-    $("#2ndBeam").removeClass("titles");
-    $("#3rdBeam").removeClass("titles");
-    $("#AboutMe").removeClass("titles");
-    $("#Experience").removeClass("titles");
-    $("#Project").removeClass("titles");
-  }
-
-
 
 
 
