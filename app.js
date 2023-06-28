@@ -1,5 +1,4 @@
 
-"use strict";
 var firstDivWithPicture = $("#pictureGroup div:has(img):first");
 
 var secondToLastChild = $("#pictureGroup div:nth-last-child(-n+2)");
