@@ -240,7 +240,7 @@ $(document).ready(function () {
 
   function generateSiteTags(data) {
     if (data.siteLink !== "") {
-      return `<a href="${data.siteLink}" class="ms-3">
+      return `<a href="${data.siteLink}" target="_blank" class="ms-3">
           <div class="horiShine">
           <div class="bgBody px-2 rounded-1">
             SITE

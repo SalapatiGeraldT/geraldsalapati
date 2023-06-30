@@ -18,6 +18,7 @@
     <meta name="Keyword" content="Gerald Salapati">
     <meta name="Author" content="Gerald Salapati">
     <link rel="canonical" href="https://salapatigeraldt.github.io/portfolio/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <style>
@@ -348,7 +349,9 @@
             <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 "  >
 
                 <div class=" d-flex flex-column h-100 bgBody" >
-                    <div class="d-flex justify-content-center " >
+                    <div class="d-flex justify-content-center " 
+                            
+                        >
                         <div class=" green brit-font fs-4 fw-bold  aboutMeText text-center  ">
                             ABOUT ME
                         </div>
@@ -405,7 +408,7 @@
 
                                     
 
-                                    <div class=" ">
+                                    <div class=" " >
                                         <div class=" mt-0 mt-lg-3  text-light-emphasis"> 
                                             I have enjoyed creating a server side logic that solves and eases business 
                                             processes and their difficulties as I develop a website 
@@ -419,7 +422,11 @@
                                     </div>
                                 </div>
 
-                                <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1">
+                                <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1" 
+                                data-aos="flip-down"  
+                                data-aos-easing="ease" 
+                                data-aos-delay="100"
+                                >
                                     "Driven to help, passionate to develop programs and dedicated for self-improvement."
                                 </div>
 
@@ -549,7 +556,11 @@
 
                      
                     </div>
-                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1">
+                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1"
+                    data-aos="flip-down"  
+                    data-aos-easing="ease" 
+                    data-aos-delay="100"
+                    >
                         "Trained to be detail oriented and collaborative. Gained intermediate knowledge about the Laravel Framework."
                     </div>
                 </div>
@@ -615,7 +626,11 @@
                     <div id="projectContainer"></div>
 
                    
-                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1">
+                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1"
+                    data-aos="flip-down"  
+                    data-aos-easing="ease" 
+                    data-aos-delay="100"
+                    >
                         "I combine my technical expertise, collaborative teamwork, and attention to detail to meet specific business needs."
                     </div>
               
@@ -843,13 +858,24 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
-    <script src="https://salapatigeraldt.github.io/portfolio/app.js">
+    <script src="app.js">
 
         
     </script>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 400,
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
 
+    </script>
 
 </body>
 </html>
