@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 
 
@@ -12,150 +14,161 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Salapati | Portfolio</title>
     <link rel="shortcut icon" href="img/GSLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
 
     <meta name="Description" content="Gerald Salapati Portfolio">
     <meta name="Keyword" content="Gerald Salapati">
     <meta name="Author" content="Gerald Salapati">
-    <link rel="canonical" href="https://salapatigeraldt.github.io/portfolio/">
+    <link rel="canonical" href="https://salapatigeraldt.github.io/portfolio/preferred-url">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <style>
-
-    .stickyTop{
-        position: sticky ;
+    .stickyTop {
+        position: sticky;
         top: 0;
         z-index: 1;
     }
-    .stickyTopNav{
+
+    .stickyTopNav {
         position: sticky !important;
         top: 0;
         z-index: 1;
         /* animation: getDown 5s ease-in-out linear ; */
         /* animation: slide-bar 0.5s ease-out 0s 1 normal forwards; */
     }
-    .wholePage{
+
+    .wholePage {
         height: 88vh;
     }
-    
-    .name-size{
+
+    .name-size {
         font-size: 2.5em;
         line-height: 44px;
     }
+
     @media (min-width: 576px) {
-    .stickyTop{
-        position:initial;
-        z-index: 0;
+        .stickyTop {
+            position: initial;
+            z-index: 0;
+        }
+
+        .name-size {
+            font-size: 3.5em;
+            line-height: 69px;
+        }
+
     }
-    .name-size{
-        font-size: 3.5em;
-        line-height: 69px;
+
+    .titles {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
     }
-   
-  }
-  
-  .titles {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease ;
-}
 
 
 
 
 
-.removeUp{
-  animation: moveUpAndDisappear 0.8s ease forwards;
-}
-
-.addDown{
-  animation: moveDownAndAppear 0.8s ease forwards;
-}
-
-@keyframes moveUpAndDisappear {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-
-
-
-@keyframes moveDownAndAppear {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.sparkling{
-    animation: spark 2s linear 1 ;
-  
-}
-
-@keyframes spark{
-    0%{
-    color: #1e252d;
+    .removeUp {
+        animation: moveUpAndDisappear 0.8s ease forwards;
     }
-    20%{
-        color: #2d9d84;
+
+    .addDown {
+        animation: moveDownAndAppear 0.8s ease forwards;
     }
-    50%{
-        color: #2d9d84;
+
+    @keyframes moveUpAndDisappear {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
     }
-    60%{
-        color: #2d9d84;
-    }
-    70%{
-        color: #6c757d86;
-    }
-    80%{
-        color: #2d9d84;
-    }
-    100%{
-        color: #2d9d84;
-    }
-   
-}
-.noOpacity{
-    opacity: 0;
-}
 
 
-.hidden{
-    display: none;
-}
 
-.leftInAnimate{
-    animation: leftAppear 0.5s ease-in 1 ;
-}
+    @keyframes moveDownAndAppear {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
 
-@keyframes leftAppear {
-  0% {
-    transform: translateX(-10%);
-    opacity: 0;
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
-  }
-  
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+    .sparkling {
+        animation: spark 2s linear 1;
+
+    }
+
+    @keyframes spark {
+        0% {
+            color: #1e252d;
+        }
+
+        20% {
+            color: #2d9d84;
+        }
+
+        50% {
+            color: #2d9d84;
+        }
+
+        60% {
+            color: #2d9d84;
+        }
+
+        70% {
+            color: #6c757d86;
+        }
+
+        80% {
+            color: #2d9d84;
+        }
+
+        100% {
+            color: #2d9d84;
+        }
+
+    }
+
+    .noOpacity {
+        opacity: 0;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    .leftInAnimate {
+        animation: leftAppear 0.5s ease-in 1;
+    }
+
+    @keyframes leftAppear {
+        0% {
+            transform: translateX(-10%);
+            opacity: 0;
+
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 </style>
 
 <div>
-    
+
 
     <div class=" gradientTop">
 
@@ -163,69 +176,78 @@
 
 
     <div class=" stickyTopNav  ">
-        <div  class="  bgBody px-0 px-md-3">
-            <div class="fs-4 d-flex align-items-center text-white justify-content-between px-4 py-3 topBar poppins  fw-bold">
+        <div class="  bgBody px-0 px-md-3">
+            <div
+                class="fs-4 d-flex align-items-center text-white justify-content-between px-4 py-3 topBar poppins  fw-bold">
                 <div class=" ">
-                    <a  href="https://salapatigeraldt.github.io/portfolio/"
-                        class=""
-                        style=" text-decoration:none !important; color: white !important;"
-                        > 
-    
+                    <a href="https://salapatigeraldt.github.io/portfolio/" class=""
+                        style=" text-decoration:none !important; color: white !important;">
+
                         <div class=" d-flex flex-column  align-items-center">
-                            <img src="img/GSLogo.png" class="mainLogo " alt="Gerald Salapati Logo" >
-    
+                            <img src="img/GSLogo.png" class="mainLogo " alt="Gerald Salapati Logo">
+
                         </div>
-                    
-                    
+
+
                     </a>
                 </div>
-         
+
                 <div class=" ">
-                    
+
                     <div class=" d-flex justify-content-between align-items-center">
-                        <div class="  " >
-                       
-                                <div class="aboutMeIcon  ms-3 ms-lg-5 titles lightColorFillIcon " data-bs-toggle="tooltip" data-bs-placement="bottom" title="About Me" id="AboutMe">
-                                    <a class="d-flex justify-content-center align-items-center " href="#about" >
-    
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi lightColorFill bi-person-vcard" viewBox="0 0 16 16">
-                                        <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
-                                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
-                                      </svg>
-                                    </a>
-                                </div>
-                         
+                        <div class="  ">
+
+                            <div class="aboutMeIcon  ms-3 ms-lg-5 titles lightColorFillIcon " data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" title="About Me" id="AboutMe">
+                                <a class="d-flex justify-content-center align-items-center " href="#about">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi lightColorFill bi-person-vcard" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z" />
+                                        <path
+                                            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z" />
+                                    </svg>
+                                </a>
+                            </div>
+
                         </div>
-                        <div class="  " >
-                           
-                                <div class="experienceIcon  ms-3 ms-lg-5  titles lightColorFillIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experience" id="Experience">
-                                    <a class="d-flex justify-content-center align-items-center " href="#exp" >
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi lightColorFill bi-briefcase" viewBox="0 0 16 16">
-                                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
-                                      </svg>
-                                    </a>
-                                </div>
-                         
+                        <div class="  ">
+
+                            <div class="experienceIcon  ms-3 ms-lg-5  titles lightColorFillIcon"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experience" id="Experience">
+                                <a class="d-flex justify-content-center align-items-center " href="#exp">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi lightColorFill bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+
                         </div>
-    
-                         <div class="  " >
-                            
-                                <div class="projectIcon  ms-3 ms-lg-5  titles lightColorFillIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Project" id="Project">
-                                    <a class="d-flex justify-content-center align-items-center " href="#proj" >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi lightColorFill bi-postcard" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
-                                      </svg>
-                                    </a>
-                                </div>
-                           
+
+                        <div class="  ">
+
+                            <div class="projectIcon  ms-3 ms-lg-5  titles lightColorFillIcon" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" title="Project" id="Project">
+                                <a class="d-flex justify-content-center align-items-center " href="#proj">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi lightColorFill bi-postcard" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z" />
+                                    </svg>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
-     
-    
-                  
-                 
+
+
+
+
                 </div>
-    
+
             </div>
         </div>
     </div>
@@ -233,110 +255,116 @@
 
 
 
-<div class=" " id="landingPage" >
-    <div class=" position-relative  h-100 w-100">
+    <div class=" " id="landingPage">
+        <div class=" position-relative  h-100 w-100">
 
-        <div class="h-100  d-flex flex-column justify-content-center ">
-            <div class=" d-flex align-items-center  h-100 justify-content-center container  px-4 px-lg-0 ">
-                <div class="center-item ">
-        
-        
-                    
-        
-                    <section class="   my-5">
-                        <div class=" d-flex justify-content-start justify-content-lg-center pt-3 pt-sm-5 ">
-        
-                            <div class=" d-flex flex-column    brit-font-lg position-relative">
-                                <div class="  display-3 mb-4  text-start text-lg-center  outline-stroke impact titles" id="outLineTitle">
-                                    WELCOME TO MY PORTFOLIO
-                                </div>
+            <div class="h-100  d-flex flex-column justify-content-center ">
+                <div class=" d-flex align-items-center  h-100 justify-content-center container  px-4 px-lg-0 ">
+                    <div class="center-item ">
+
+
+
+
+                        <section class="   my-5">
+                            <div class=" d-flex justify-content-start justify-content-lg-center pt-3 pt-sm-5 ">
+
+                                <div class=" d-flex flex-column    brit-font-lg position-relative">
+                                    <div class="  display-3 mb-4  text-start text-lg-center  outline-stroke impact titles"
+                                        id="outLineTitle">
+                                        WELCOME TO MY PORTFOLIO
+                                    </div>
                                     <div class="green name-size text-start text-lg-center titles" id="nameTitle">
                                         Hi, I'm Gerald
                                     </div>
-                               
-                                <div class=" text-light-emphasis text-start text-lg-center fs-6 mt-4 titles" id="subTitle">
-                                    Inspiring System Developer 
-                                </div>
-        
-                                <div class="bgBody summaryBorder mt-4 text-start text-lg-center border-1 py-3 px-3 px-lg-5 rounded-1 brit-font titles" id="containTitle">
-                                    <span class=" titles" id="objTitle">
-                                        Currently looking for an opportunity to maximize 
-                                        and strengthen my skills in system development. 
-                                    </span>
-                                
-                                    <br>
-        
-                                    <div class=" d-flex justify-content-start justify-content-lg-center ">
-                                        <div class="  position-relative">
-                                            <div class="horiShine me-2">
-                                                <div class=" bgBody rounded-1  green px-3 py-1 mt-2  d-flex align-items-center titles" id="preResTitle">
-                                                    Preview my resume
+
+                                    <div class=" text-light-emphasis text-start text-lg-center fs-6 mt-4 titles"
+                                        id="subTitle">
+                                        Inspiring System Developer
+                                    </div>
+
+                                    <div class="bgBody summaryBorder mt-4 text-start text-lg-center border-1 py-3 px-3 px-lg-5 rounded-1 brit-font titles"
+                                        id="containTitle">
+                                        <span class=" titles" id="objTitle">
+                                            Currently looking for an opportunity to maximize
+                                            and strengthen my skills in system development.
+                                        </span>
+
+                                        <br>
+
+                                        <div class=" d-flex justify-content-start justify-content-lg-center ">
+                                            <div class="  position-relative">
+                                                <div class="horiShine me-2">
+                                                    <div class=" bgBody rounded-1  green px-3 py-1 mt-2  d-flex align-items-center titles"
+                                                        id="preResTitle">
+                                                        Preview my resume
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+
+                                            <div class="ms-2">
+                                                <div class=" px-3 py-1 mt-2">
+                                                    <a href="#contactMe" class="noTextDeco green">
+                                                        Contact me
+                                                    </a>
+
                                                 </div>
                                             </div>
 
-                                          
-                                           
                                         </div>
-
-                                        <div class="ms-2">
-                                            <div class=" px-3 py-1 mt-2">
-                                                <a href="#contactMe" class="noTextDeco green">
-                                                    Contact me
-                                                </a>
-                                               
-                                            </div>
-                                        </div>
-                                    
                                     </div>
                                 </div>
+
+                                <div>
+
+                                </div>
                             </div>
-                        
-                            <div>
-        
-                            </div>
-                        </div>
-                        
-                    </section>
-        
-        
-                </div>
-        
-        
-                
-            </div>
-            <div class=" mt-4 " style=" z-index: -1;">
-                
-                <div class=" h-100">
-                    <section class=" titles" id="1stBeam"> 
-                        <div class=" card-bg-color  fs-4  brit-font text-start text-lg-center mx-0 mx-lg-auto " style=" top: -8px !important; width: 75% !important;">
-                
-                
-                        </div>
-                    </section>
-                    
-                    <section class=" titles" id="2ndBeam"> 
-                        <div class=" card-bg-color  fs-4  brit-font text-start text-lg-center ">
-                    
-                
-                        </div>
-                    </section>
-                
-                    <section class=" titles" id="3rdBeam" > 
-                        <div class=" card-bg-color  fs-4  brit-font text-start text-lg-center" style=" top: 8px !important;">
-                        
-                        </div>
-                    </section>
+
+                        </section>
+
+
                     </div>
+
+
+
+                </div>
+                <div class=" mt-4 " style=" z-index: -1;">
+
+                    <div class=" h-100">
+                        <section class=" titles" id="1stBeam">
+                            <div class=" card-bg-color  fs-4  brit-font text-start text-lg-center mx-0 mx-lg-auto "
+                                style=" top: -8px !important; width: 75% !important;">
+
+
+                            </div>
+                        </section>
+
+                        <section class=" titles" id="2ndBeam">
+                            <div class=" card-bg-color  fs-4  brit-font text-start text-lg-center ">
+
+
+                            </div>
+                        </section>
+
+                        <section class=" titles" id="3rdBeam">
+                            <div class=" card-bg-color  fs-4  brit-font text-start text-lg-center"
+                                style=" top: 8px !important;">
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
+
         </div>
 
-    </div>
- 
-   
-   
-</div>
 
-    <div  id="about"></div>
+
+    </div>
+
+    <div id="about"></div>
 
     <div class="greatDivider">
 
@@ -346,33 +374,31 @@
 
     <div class="container  px-4 px-lg-0" id="">
         <div class=" row g-0  ">
-            <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 "  >
+            <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 ">
 
-                <div class=" d-flex flex-column h-100 bgBody" >
-                    <div class="d-flex justify-content-center " 
-                            
-                        >
+                <div class=" d-flex flex-column h-100 bgBody">
+                    <div class="d-flex justify-content-center ">
                         <div class=" green brit-font fs-4 fw-bold  aboutMeText text-center  ">
                             ABOUT ME
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-center h-100 position-relative ">
-                        <div class=" mt-4 d-none d-lg-block " >
+                        <div class=" mt-4 d-none d-lg-block ">
                             <div class=" verticalLine  d-none d-lg-block ">
-    
+
                             </div>
                         </div>
                         <div class="position-absolute h-100 d-none d-lg-block  lightColor ">
                             <div class=" h-100 d-flex flex-column  justify-content-center ">
-                            
-                                
+
+
                             </div>
-                        
-                        
+
+
                         </div>
                     </div>
-                
+
 
                 </div>
 
@@ -395,52 +421,47 @@
 
                     <!-- <div id="projectContainer"></div> -->
 
-                
+
 
                     <div class=" row g-0 brit-font mt-3 py-1">
 
                         <div class=" col-12  ">
-                
+
 
                             <div class=" position-relative ">
                                 <div class="   pb-5">
-                                    
 
-                                    
 
-                                    <div class=" " >
-                                        <div class=" mt-0 mt-lg-3  text-light-emphasis"> 
-                                            I have enjoyed creating a server side logic that solves and eases business 
-                                            processes and their difficulties as I develop a website 
-                                            as a full-stack developer. This was part of our partial fulfillment 
-                                            in one of our subjects. Throughout my college years, I have always found 
-                                            myself self-studying in order to provide something unique that sets our 
-                                            project apart from others who simply get the job done. Programming while 
-                                            listening to non-lyrical music and playing mobile games is how I spend my 
+
+
+                                    <div class=" ">
+                                        <div class=" mt-0 mt-lg-3  text-light-emphasis">
+                                            I have enjoyed creating a server side logic that solves and eases business
+                                            processes and their difficulties as I develop a website
+                                            as a full-stack developer. This was part of our partial fulfillment
+                                            in one of our subjects. Throughout my college years, I have always found
+                                            myself self-studying in order to provide something unique that sets our
+                                            project apart from others who simply get the job done. Programming while
+                                            listening to non-lyrical music and playing mobile games is how I spend my
                                             leisure time.
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1" 
-                                
-                                >
+                                <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1">
                                     "Driven to help, passionate to develop programs and dedicated for self-improvement."
                                 </div>
 
 
                             </div>
 
-                           
+
                         </div>
-                      
+
                     </div>
 
 
 
-                
-
-                
 
 
 
@@ -448,53 +469,56 @@
 
 
 
-                    
 
 
-                    
-            
+
+
+
+
+
+
                 </div>
             </div>
 
         </div>
 
     </div>
-    <div  id="exp"></div>
-    
-    <section class="  greatDivider"> 
-     
+    <div id="exp"></div>
+
+    <section class="  greatDivider">
+
     </section>
 
-   
+
     <div class="container  px-4 px-lg-0">
         <div class=" row g-0  ">
-            <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 " >
+            <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 ">
 
                 <div class=" d-flex flex-column h-100 bgBody">
-                    <div class="d-flex justify-content-center " >
+                    <div class="d-flex justify-content-center ">
                         <div class="green  brit-font fs-4 fw-bold  aboutMeText text-center  ">
                             EXPERIENCE
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-center h-100 position-relative ">
-                        <div class=" mt-4 d-none d-lg-block " >
+                        <div class=" mt-4 d-none d-lg-block ">
                             <div class=" verticalLine  d-none d-lg-block ">
-    
+
                             </div>
                         </div>
                         <div class="position-absolute h-100 d-none d-lg-block  lightColor ">
                             <div class=" h-100 d-flex flex-column  justify-content-center ">
-                                
-                         
-                                
-                                
+
+
+
+
                             </div>
-                        
-                        
+
+
                         </div>
                     </div>
-                
+
 
                 </div>
 
@@ -512,7 +536,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class=" row g-0 brit-font mt-5 pb-5">
 
                         <div class=" col-12 col-lg-3 ">
@@ -531,76 +555,80 @@
                                 </div>
                             </div>
 
-                            
+
                         </div>
                         <div class="col-12 col-lg-9">
 
-        
-                        
-                    
-        
+
+
+
+
                             <div class=" text-light-emphasis mt-3 mt-lg-0 ">
-                                During my internship at a company, I was assigned to the Quality Assurance team where 
-                                I gained valuable experience in software testing. I was responsible for testing various 
-                                functionalities of the company's developing website by following a provided list of test cases and 
-                                comparing the expected results with the actual outcomes. I actively collaborated with the 
-                                programmers, discussing any discrepancies or conflicts encountered during testing. 
-                                In addition to my role in Quality Assurance, my supervisor also took the time to teach me the 
-                                fundamentals of programming using the PHP framework Laravel. This knowledge provided me with 
-                                a solid understanding of how the website was built and enabled me to independently create 
+                                During my internship at a company, I was assigned to the Quality Assurance team where
+                                I gained valuable experience in software testing. I was responsible for testing various
+                                functionalities of the company's developing website by following a provided list of test
+                                cases and
+                                comparing the expected results with the actual outcomes. I actively collaborated with
+                                the
+                                programmers, discussing any discrepancies or conflicts encountered during testing.
+                                In addition to my role in Quality Assurance, my supervisor also took the time to teach
+                                me the
+                                fundamentals of programming using the PHP framework Laravel. This knowledge provided me
+                                with
+                                a solid understanding of how the website was built and enabled me to independently
+                                create
                                 websites using this technology.
                             </div>
                         </div>
 
-                     
+
                     </div>
-                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1"
-                    
-                    >
-                        "Trained to be detail oriented and collaborative. Gained intermediate knowledge about the Laravel Framework."
+                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1">
+                        "Trained to be detail oriented and collaborative. Gained intermediate knowledge about the
+                        Laravel Framework."
                     </div>
                 </div>
             </div>
 
         </div>
-    
+
     </div>
-    <div  id="proj"></div>
-    <section class="container greatDivider"> 
-     
+    <div id="proj"></div>
+    <section class="container greatDivider">
+
     </section>
-  
+
     <div class="container  px-4 px-lg-0" id="">
         <div class=" row g-0  ">
-            <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 " >
+            <div class="col-auto col-lg-2  stickyTop py-3 p-lg-0 ">
 
                 <div class=" d-flex flex-column h-100 bgBody">
-                    <div class="d-flex justify-content-center " >
+                    <div class="d-flex justify-content-center ">
                         <a href="https://www.youtube.com/@DevBlueNtl" target="_blank" class=" noTextDeco">
                             <div class="green  brit-font fs-4 fw-bold  aboutMeText text-center  ">
                                 PROJECT
                             </div>
                         </a>
-              
-                       
+
+
                     </div>
 
                     <div class="d-flex justify-content-center h-100 position-relative ">
-                        <div class=" mt-4 d-none d-lg-block " >
+                        <div class=" mt-4 d-none d-lg-block ">
                             <div class=" verticalLine  d-none d-lg-block ">
-    
+
                             </div>
                         </div>
                         <div class="position-absolute h-100 d-none d-lg-block  lightColor ">
                             <div class=" h-100 d-flex flex-column  justify-content-center ">
-                                
-                                
+
+
                             </div>
-                        
-                        
+
+
                         </div>
                     </div>
-                
+
 
                 </div>
 
@@ -621,23 +649,22 @@
 
                     <div id="projectContainer"></div>
 
-                   
-                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1"
-                    
-                    >
-                        "I combine my technical expertise, collaborative teamwork, and attention to detail to meet specific business needs."
+
+                    <div class=" summaryBorder mt-3 text-center border-1 p-3 rounded-1">
+                        "I combine my technical expertise, collaborative teamwork, and attention to detail to meet
+                        specific business needs."
                     </div>
-              
+
                 </div>
             </div>
 
         </div>
-        
+
     </div>
 
-    
-    <section class="  greatDivider"> 
-     
+
+    <section class="  greatDivider">
+
     </section>
 
 
@@ -648,13 +675,13 @@
 
     </div>
 
-   
+
     <div class=" container px-4 px-lg-0 mt-3">
 
         <div class=" d-flex flex-wrap justify-content-start justify-content-lg-center">
             <div class=" horiShine my-1 me-2">
                 <div class="bgBody   text-center border-1 px-3 py-2 rounded-1">
-                    Laravel 
+                    Laravel
                 </div>
             </div>
             <div class=" horiShine my-1 me-2">
@@ -669,7 +696,7 @@
             </div>
             <div class=" horiShine my-1 me-2">
                 <div class="bgBody   text-center border-1 px-3 py-2 rounded-1">
-                    Tailwind 
+                    Tailwind
                 </div>
             </div>
             <div class=" horiShine my-1 me-2">
@@ -733,105 +760,119 @@
                 </div>
             </div>
         </div>
-    
-     
+
+
     </div>
 
-    <section class="  greatDivider"> 
-    <div id="contactMe"></div>
-     
+    <section class="  greatDivider">
+        <div id="contactMe"></div>
+
     </section>
 
-   
+
     <div class="  px-4 px-lg-0 py-5 mt-5 darkBgBody">
         <div class="container ">
             <div class=" coloredBorder my-5">
                 <div class=" darkBgBody  text-lg-center text-start border-1 p-4 rounded-1">
                     <div class=" fs-1 green brit-font-lg">
                         Hire me
-    
+
                     </div>
-    
-    
+
+
                     <div class=" text-light-emphasis mt-2 ">
                         Contact me for the opportunity to engage a dedicated and passionate IT professional, <br>
-                        adept at helping businesses thrive through the creation of transformative systems that exceed expectations.
+                        adept at helping businesses thrive through the creation of transformative systems that exceed
+                        expectations.
                     </div>
-                    
-                   
-                         <div class=" mt-3">
+
+
+                    <div class=" mt-3">
                         <div class=" d-flex justify-content-lg-center justify-content-start">
                             <div>
-    
+
                             </div>
-    
+
                             <div>
-    
+
                             </div>
                             <div>
-                                
+
                             </div>
-                            <div class=" mx-2 lightColorFillDiv  " data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn">
-                                <a href="https://www.linkedin.com/in/gerald-salapati-90834827a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDG1J6Uc0Rx6sXDFW8zyOjA%3D%3D" target="_blank">
+                            <div class=" mx-2 lightColorFillDiv  " data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="LinkedIn">
+                                <a href="https://www.linkedin.com/in/gerald-salapati-90834827a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDG1J6Uc0Rx6sXDFW8zyOjA%3D%3D"
+                                    target="_blank">
                                     <div class=" text-center p-2  ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="lightColorFill  bi bi-linkedin" viewBox="0 0 16 16">
-                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                                          </svg>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class=" mx-2 lightColorFillDiv " data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub">
-                                <a href="https://github.com/SalapatiGeraldT" target="_blank">
-                                    <div class=" text-center p-2   ">
-                                       
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="lightColorFill bi bi-github" viewBox="0 0 16 16">
-                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="lightColorFill  bi bi-linkedin"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                                         </svg>
                                     </div>
                                 </a>
                             </div>
-                         
-                            <div class=" mx-2 lightColorFillDiv " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook">
+                            <div class=" mx-2 lightColorFillDiv " data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="GitHub">
+                                <a href="https://github.com/SalapatiGeraldT" target="_blank">
+                                    <div class=" text-center p-2   ">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="lightColorFill bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class=" mx-2 lightColorFillDiv " data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Facebook">
                                 <a href="https://www.facebook.com/junichirald.salapate" target="_blank">
                                     <div class=" text-center p-2   ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="lightColorFill bi bi-facebook" viewBox="0 0 16 16">
-                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="lightColorFill bi bi-facebook"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                                         </svg>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                
-    
-                   
-    
+
+
+
+
                 </div>
             </div>
-            
+
         </div>
-     
+
     </div>
 
-   
 
-  
 
-    <footer class=" " >
-        <div class=" px-0 px-md-3 py-2 bgBody d-flex flex-column align-items-start align-items-sm-center justify-content-center">
-            <div class=" px-4 py-1 green" id="backAtTheTop" style="cursor: pointer;"> 
+
+
+    <footer class=" ">
+        <div
+            class=" px-0 px-md-3 py-2 bgBody d-flex flex-column align-items-start align-items-sm-center justify-content-center">
+            <div class=" px-4 py-1 green" id="backAtTheTop" style="cursor: pointer;">
                 Back at the Top
             </div>
 
-            <div class=" px-4 py-1"> 
+            <div class=" px-4 py-1">
                 &#169; 2023 Gerald Salapati.
             </div>
-            
+
         </div>
-    
+
     </footer>
-      
-   
+
+
 
 
 
@@ -840,21 +881,26 @@
 
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
+            return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
     <script src="app.js">
 
-        
+
     </script>
 
 
@@ -871,5 +917,6 @@
 
     </script>
 
-</body>
+    </body>
+
 </html>
