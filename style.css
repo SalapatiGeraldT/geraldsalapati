@@ -405,23 +405,34 @@ hr{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, 
-    #08abdd, #0a5663,
-   #2d9d69 , 
-     #034868,   #066083, #0cb1e4
-   );
-   animation: rotateAnimation 6s linear infinite;
+    background: -webkit-linear-gradient(45deg, #08abdd, #0a5663, #2d9d69, #034868, #066083, #0cb1e4);
+    background: linear-gradient(45deg, #08abdd, #0a5663, #2d9d69, #034868, #066083, #0cb1e4);
+    -webkit-animation: rotateAnimation 6s linear infinite;
+    animation: rotateAnimation 6s linear infinite;
     z-index: -1;
     border-radius: 100%;
 }
 
-
-@keyframes rotateAnimation {
+@-webkit-keyframes rotateAnimation {
     0% {
+        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
 
     100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
