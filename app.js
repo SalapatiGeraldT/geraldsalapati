@@ -466,7 +466,7 @@ function idleScreen() {
 
   function yourFunction() {
     animatePleaseLookHeader();
-    $(".mainLogo").css("transform", "rotate(90deg)");
+    $(".mainLogo").css("transform", "rotate(0deg)");
     firstRun = false;
   }
 
@@ -489,4 +489,6 @@ function idleScreen() {
   }
 }
 idleScreen();
+
+
 
