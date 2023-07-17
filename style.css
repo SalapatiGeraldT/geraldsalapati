@@ -438,9 +438,17 @@ hr{
 }
 
 
-.paragraph .auto-emphasis{
+.aboutMeInfo .auto-emphasis{
     color: inherit;
 }
-.paragraph:hover .auto-emphasis{
+.aboutMeInfo:hover .auto-emphasis{
+    color: white;
+}
+
+
+.experienceInfo .auto-emphasis{
+    color: inherit;
+}
+.experienceInfo:hover .auto-emphasis{
     color: white;
 }
