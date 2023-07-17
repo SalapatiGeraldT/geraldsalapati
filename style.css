@@ -436,3 +436,11 @@ hr{
         transform: rotate(360deg);
     }
 }
+
+
+.paragraph .auto-emphasis{
+    color: inherit;
+}
+.paragraph:hover .auto-emphasis{
+    color: white;
+}
