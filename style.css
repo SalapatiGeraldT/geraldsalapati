@@ -60,8 +60,8 @@ hr{
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    border-bottom: 1px solid #6c757d86;
-    border-top: 1px solid #6c757d86;
+    /* border-bottom: 1px solid #6c757d86;
+    border-top: 1px solid #6c757d86; */
     /* background-color: #171c24ee; */
 	/* border-right: 1px solid rgba(21, 76, 128, 0.473);
     border-bottom: 1px solid rgba(17, 97, 80, 0.473); */
@@ -451,4 +451,30 @@ hr{
 }
 .experienceInfo:hover .auto-emphasis{
     color: white;
+}
+
+
+.projectItemContainer{
+    visibility: hidden;
+}
+
+
+
+.projectItemContainer > * {
+    visibility: visible;
+    transition: opacity 100ms;
+}
+
+.projectItemContainer:hover > :not(:hover){
+    opacity: 0.3;
+}
+
+.itemBg{
+    transition:  0.5s ease-out;
+}
+.itemBg:hover{
+    background-color:  #10151b;
+-webkit-backdrop-filter: blur(7px);
+backdrop-filter: blur(7px);
+    
 }
