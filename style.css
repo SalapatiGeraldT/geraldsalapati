@@ -489,3 +489,7 @@ backdrop-filter: blur(7px);
 .bgSvg{
     z-index: -1;
 }
+
+/* .leftBg{
+    mix-blend-mode: color-dodge;
+} */
