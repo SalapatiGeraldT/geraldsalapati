@@ -293,7 +293,7 @@ $(document).ready(function () {
       videoSrc: "https://www.youtube-nocookie.com/embed/5WHEDc3-qME",
       imageSrc: "img/Project1.png",
       imageDesc: "RTU UCCAE Form Management Dashboard",
-      siteLink: "http://13.251.135.208/",
+      siteLink: "http://rtu-uccae-fms.site/",
       languages: ["Laravel", "jQuery", "Bootstrap", "MySQL"],
       description:
       "As our final project this website help the organization overcome operational challenges encountered during the audition, membership, and scholarship processes. By providing a digital platform to manage all necessary forms and documents, the system streamlines processes, reduces difficulties, and ensures that required documents are submitted promptly."
