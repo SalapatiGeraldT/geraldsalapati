@@ -161,7 +161,7 @@ $(document).ready(function () {
 
   function initializeProject(index, data) {
     const html = `
-        <div class="row g-0 brit-font mt-3 mb-4 projectId  px-3 py-4 rounded-1 itemBg">
+        <div class="row g-0 brit-font mt-3 mb-4 projectId  px-3 py-4 rounded-1 itemBg"  data-aos="fade-up" data-aos-delay="200">
           <div class="col-12 col-lg-5">
             <div class="me-0 me-lg-4 text-start text-lg-end h-100">
               <div class="d-flex flex-column h-100">
